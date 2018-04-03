@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_person_detail_3_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        android:padding="@dimen/y5"
+        android:visibility="gone" />
+
+    <View style="@style/v_split" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        android:orientation="horizontal">
+
+        <com.gjzg.custom.CImageView
+            android:id="@+id/civ_item_person_detail_3_icon"
+            android:layout_width="@dimen/y35"
+            android:layout_height="@dimen/y35"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/y5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/person_face_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_person_detail_3_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/y8" />
+
+            <TextView
+                android:id="@+id/tv_item_person_detail_3_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:textSize="@dimen/y8" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

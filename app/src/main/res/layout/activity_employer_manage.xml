@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_employer_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_c4ced3"
+    android:orientation="vertical"
+    tools:mContext=".activity.EmployerManageActivity">
+
+    <RelativeLayout style="@style/rl_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_employer_manage_return"
+            style="@style/rl_return">
+
+            <ImageView style="@style/iv_return" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_top_title"
+            android:text="雇主工作管理" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_employer_manage_all"
+            style="@style/rl_manage">
+
+            <TextView
+                android:id="@+id/tv_employer_manage_all"
+                style="@style/tv_manage"
+                android:text="全部"
+                android:textColor="@color/red_ff3e50" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_employer_manage_wait"
+            style="@style/rl_manage">
+
+            <TextView
+                android:id="@+id/tv_employer_manage_wait"
+                style="@style/tv_manage"
+                android:text="待联系" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_employer_manage_talk"
+            style="@style/rl_manage">
+
+            <TextView
+                android:id="@+id/tv_employer_manage_talk"
+                style="@style/tv_manage"
+                android:text="洽谈中" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_employer_manage_doing"
+            style="@style/rl_manage">
+
+            <TextView
+                android:id="@+id/tv_employer_manage_doing"
+                style="@style/tv_manage"
+                android:text="工作中" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_employer_manage_done"
+            style="@style/rl_manage">
+
+            <TextView
+                android:id="@+id/tv_employer_manage_done"
+                style="@style/tv_manage"
+                android:text="已结束" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gjzg.custom.PullToRefreshLayout
+            android:id="@+id/ptrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/y5">
+
+            <include layout="@layout/head" />
+
+            <com.gjzg.custom.PullableListView
+                android:id="@+id/plv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+
+            <include layout="@layout/foot" />
+
+        </com.gjzg.custom.PullToRefreshLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

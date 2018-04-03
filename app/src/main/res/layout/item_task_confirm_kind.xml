@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/y5">
+
+            <TextView
+                android:layout_width="@dimen/y42"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="招聘工种"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_task_confirm_kind_kind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/y5"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/y5">
+
+            <TextView
+                android:layout_width="@dimen/y42"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="工人数量"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_task_confirm_kind_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/y5"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/y5">
+
+            <TextView
+                android:layout_width="@dimen/y42"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="每日工资"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_task_confirm_kind_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/y5"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/y5">
+
+            <TextView
+                android:layout_width="@dimen/y42"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="工期"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_task_confirm_kind_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/y5"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_popwindow_detail_menu_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_detail_menu"
+            android:padding="@dimen/y5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="全部"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_popwindow_detail_menu_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_detail_menu"
+            android:padding="@dimen/y5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="支出"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_popwindow_detail_menu_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_detail_menu"
+            android:padding="@dimen/y5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="收入"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

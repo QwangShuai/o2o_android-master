@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_c4ced3"
+    android:orientation="vertical"
+    tools:mContext=".activity.SelectAddressActivity">
+
+    <RelativeLayout style="@style/rl_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_select_address_return"
+            style="@style/rl_return">
+
+            <ImageView style="@style/iv_return" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_top_title"
+            android:text="选择工作区域" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_select_address_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sl_press"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_select_address_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="省"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_select_address_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sl_press"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_select_address_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="市"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_select_address_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sl_press"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_select_address_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="区"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y12" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_select_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray_c4ced3"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

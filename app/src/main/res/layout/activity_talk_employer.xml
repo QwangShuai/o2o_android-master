@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_talk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:mContext=".activity.TalkEmployerActivity">
+
+    <RelativeLayout style="@style/rl_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_talk_employer_return"
+            style="@style/rl_return">
+
+            <ImageView style="@style/iv_return" />
+
+        </RelativeLayout>
+        <TextView
+            style="@style/tv_top_title"
+            android:text="任务详情" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_talk_employer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_talk_employer_wait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/y5"
+            android:background="@drawable/sp_login_get"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="我要接活"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_talk_employer_no_yourself"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/y5"
+            android:background="@drawable/sl_talk_worker_1"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="这是您本人发布的工作"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_talk_employer_talk_to_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/y5"
+            android:background="@drawable/sl_talk_worker_1"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="您与此工作正在洽谈"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_talk_employer_doing_for_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/y5"
+            android:background="@drawable/sl_talk_worker_1"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="您已经参与此工作"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_talk_employer_over"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/y5"
+            android:background="@drawable/sl_talk_worker_1"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="已结束"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

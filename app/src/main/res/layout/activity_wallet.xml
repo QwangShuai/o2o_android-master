@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wallet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_c4ced3"
+    android:orientation="vertical"
+    tools:mContext=".activity.WalletActivity">
+
+    <RelativeLayout style="@style/rl_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_wallet_return"
+            style="@style/rl_return">
+
+            <ImageView style="@style/iv_return" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_top_title"
+            android:text="我的钱包" />
+
+        <RelativeLayout
+            android:id="@+id/rl_wallet_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sl_press"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:text="明细"
+                android:textColor="@color/blue_2681fc"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y10"
+            android:layout_marginTop="@dimen/y18"
+            android:text="当前余额（元）"
+            android:textColor="@color/red_ff3e50"
+            android:textSize="@dimen/y9" />
+
+        <TextView
+            android:id="@+id/tv_wallet_overage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y25"
+            android:layout_marginLeft="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:textColor="@color/red_ff3e50"
+            android:textSize="@dimen/y20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_wallet_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/y11"
+                android:text="立即充值"
+                android:textColor="@color/blue_2681fc"
+                android:textSize="@dimen/y10" />
+
+            <ImageView
+                android:layout_width="@dimen/y15"
+                android:layout_height="@dimen/y15"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/y7"
+                android:layout_marginRight="@dimen/y21"
+                android:layout_marginTop="@dimen/y7"
+                android:scaleType="fitXY"
+                android:src="@mipmap/right" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_wallet_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/y11"
+                android:text="我要提现"
+                android:textColor="@color/blue_2681fc"
+                android:textSize="@dimen/y10" />
+
+            <ImageView
+                android:layout_width="@dimen/y15"
+                android:layout_height="@dimen/y15"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/y7"
+                android:layout_marginRight="@dimen/y21"
+                android:layout_marginTop="@dimen/y7"
+                android:scaleType="fitXY"
+                android:src="@mipmap/right" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

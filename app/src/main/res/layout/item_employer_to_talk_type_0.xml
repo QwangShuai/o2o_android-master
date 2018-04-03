@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y5"
+            android:background="@color/gray_c4ced3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_ffffff"
+            android:padding="@dimen/y10">
+
+            <TextView
+                android:id="@+id/tv_item_employer_to_talk_type_0_skill_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="水泥工"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_employer_to_talk_type_0_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2017.10.1-2017.10.2"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+        <View style="@style/v_split" />
+
+    </LinearLayout>
+
+</LinearLayout>

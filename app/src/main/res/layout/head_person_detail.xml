@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_c4ced3"
+        android:padding="@dimen/y5">
+
+        <com.gjzg.custom.CImageView
+            android:id="@+id/iv_head_person_detail"
+            android:layout_width="@dimen/y35"
+            android:layout_height="@dimen/y35"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/person_face_default" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/y5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="姓名"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/y10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_person_detail_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/y5"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/v_split"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/y5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="性别"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/y10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_person_detail_sex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/y5"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/v_split"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/y5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="现居地"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/y10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_person_detail_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/y5"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/v_split"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/y5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="详细地址"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/y10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_person_detail_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/y5"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/v_split"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/y5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="个人简介"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/y10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_person_detail_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/y5"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/v_split"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/y5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="角色选择"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/y10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_person_detail_role"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/y5"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/v_split"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5" />
+
+    <GridView
+        android:id="@+id/gv_head_person_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginLeft="@dimen/y5"
+        android:numColumns="4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y5"
+        android:background="@color/gray_c4ced3" />
+
+    <TextView
+        android:id="@+id/tv_head_person_detail_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/y5"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black_252323"
+        android:textSize="@dimen/y10"
+        android:textStyle="bold" />
+
+    <View
+        style="@style/v_split"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5" />
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recharge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:mContext=".activity.RechargeActivity">
+
+    <RelativeLayout style="@style/rl_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_recharge_return"
+            style="@style/rl_return">
+
+            <ImageView style="@style/iv_return" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_top_title"
+            android:text="充值" />
+
+    </RelativeLayout>
+
+    <View style="@style/v_split" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_recharge_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/y5"
+            android:background="@drawable/sp_login_get">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="去支付"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_recharge_to_pay"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/y5"
+                android:text="充值金额"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/y5"
+                    android:text="¥"
+                    android:textColor="@color/black_252323"
+                    android:textSize="@dimen/y20" />
+
+                <EditText
+                    android:id="@+id/et_recharge_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/y5"
+                    android:layout_marginRight="@dimen/y5"
+                    android:background="@null"
+                    android:hint="金额"
+                    android:inputType="number|numberDecimal"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/y16" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/v_split"
+                android:layout_marginLeft="@dimen/y5"
+                android:layout_marginRight="@dimen/y5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/y5"
+                android:text="支付方式"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/y10" />
+
+            <View
+                style="@style/v_split"
+                android:layout_marginLeft="@dimen/y5"
+                android:layout_marginRight="@dimen/y5" />
+
+            <ListView
+                android:id="@+id/lv_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

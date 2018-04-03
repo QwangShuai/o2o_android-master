@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y5"
+                android:background="@color/gray_c4ced3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_ffffff"
+                android:padding="@dimen/y10">
+
+                <TextView
+                    android:id="@+id/tv_item_tinfotask_skill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black_252323"
+                    android:textSize="@dimen/y10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_item_tinfotask_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black_252323"
+                    android:textSize="@dimen/y10" />
+
+            </RelativeLayout>
+
+            <View style="@style/v_split" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_item_tinfotask"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <View style="@style/v_split" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_ffffff"
+            android:orientation="horizontal"
+            android:padding="@dimen/y5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="确认工程结束后，系统将把预付的工资支付给工人" />
+
+            <TextView
+                android:id="@+id/tv_item_tinfotask_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="@dimen/y5"
+                android:paddingLeft="@dimen/y10"
+                android:paddingRight="@dimen/y10"
+                android:paddingTop="@dimen/y5"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

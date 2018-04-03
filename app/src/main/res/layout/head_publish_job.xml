@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/x15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_head_publish_job_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="例：找木匠，瓦工等工人"
+            android:maxLength="255"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/x15" />
+
+    </LinearLayout>
+
+    <View style="@style/v_split" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:text="描述"
+        android:textColor="@color/black_252323"
+        android:textSize="@dimen/x15"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@drawable/sl_black_stroke"
+        android:padding="@dimen/y5">
+
+        <EditText
+            android:id="@+id/et_head_publish_job_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="例：橱柜吊顶。。。"
+            android:maxLength="255"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/x15" />
+
+    </RelativeLayout>
+
+    <View style="@style/v_split" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工程类型"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/x15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_publish_job_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="选择项目类型"
+            android:textSize="@dimen/x15" />
+
+    </LinearLayout>
+
+    <View style="@style/v_split" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在区域"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/x15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_publish_job_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="选择工作所在区域"
+            android:textSize="@dimen/x15" />
+
+    </LinearLayout>
+
+    <View style="@style/v_split" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:text="详细地址"
+        android:textColor="@color/black_252323"
+        android:textSize="@dimen/x15"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@drawable/sl_black_stroke"
+        android:padding="@dimen/y5">
+
+        <EditText
+            android:id="@+id/et_head_publish_job_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="例：哈市小区9栋9层901室"
+            android:maxLength="80"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/x15" />
+
+    </RelativeLayout>
+
+    <View style="@style/v_split" />
+
+</LinearLayout>

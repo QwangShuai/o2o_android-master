@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_c4ced3"
+    android:orientation="vertical"
+    tools:mContext=".activity.PwdActivity">
+
+    <RelativeLayout style="@style/rl_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_pwd_return"
+            style="@style/rl_return">
+
+            <ImageView style="@style/iv_return" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_top_title"
+            android:text="密码设置" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_pwd"
+            style="@style/ll_pwd"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout style="@style/rl_pwd">
+
+                <ImageView
+                    android:id="@+id/iv_pwd_point_0"
+                    style="@style/iv_pwd" />
+
+            </RelativeLayout>
+
+            <View style="@style/v_pwd" />
+
+            <RelativeLayout style="@style/rl_pwd">
+
+                <ImageView
+                    android:id="@+id/iv_pwd_point_1"
+                    style="@style/iv_pwd" />
+
+            </RelativeLayout>
+
+            <View style="@style/v_pwd" />
+
+            <RelativeLayout style="@style/rl_pwd">
+
+                <ImageView
+                    android:id="@+id/iv_pwd_point_2"
+                    style="@style/iv_pwd" />
+
+            </RelativeLayout>
+
+            <View style="@style/v_pwd" />
+
+            <RelativeLayout style="@style/rl_pwd">
+
+                <ImageView
+                    android:id="@+id/iv_pwd_point_3"
+                    style="@style/iv_pwd" />
+
+            </RelativeLayout>
+
+            <View style="@style/v_pwd" />
+
+            <RelativeLayout style="@style/rl_pwd">
+
+                <ImageView
+                    android:id="@+id/iv_pwd_point_4"
+                    style="@style/iv_pwd" />
+
+            </RelativeLayout>
+
+            <View style="@style/v_pwd" />
+
+            <RelativeLayout style="@style/rl_pwd">
+
+                <ImageView
+                    android:id="@+id/iv_pwd_point_5"
+                    style="@style/iv_pwd" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pwd_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_pwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y5"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y14" />
+
+        <TextView
+            android:id="@+id/tv_pwd_fgt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ll_pwd"
+            android:layout_below="@+id/ll_pwd"
+            android:layout_marginTop="@dimen/y5"
+            android:text="忘记密码?"
+            android:textColor="@color/blue_2681fc"
+            android:textSize="@dimen/y8"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:numColumns="3" />
+
+</LinearLayout>

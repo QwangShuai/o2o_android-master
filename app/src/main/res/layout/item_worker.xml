@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item_worker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5"
+        android:background="@drawable/sl_item_skills"
+        android:orientation="horizontal">
+
+        <com.gjzg.custom.CImageView
+            android:id="@+id/iv_item_worker_icon"
+            android:layout_width="@dimen/y32"
+            android:layout_height="@dimen/y32"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/x10"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/y6"
+            android:layout_marginTop="@dimen/y6"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_worker_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray_a0a0a0"
+                android:textSize="@dimen/y10" />
+
+            <TextView
+                android:id="@+id/tv_item_worker_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y6"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray_c4ced3"
+                android:textSize="@dimen/y9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/y8"
+            android:layout_marginRight="@dimen/y8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_item_worker_status"
+                    android:layout_width="@dimen/y20"
+                    android:layout_height="@dimen/y10"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv_item_worker_collect"
+                    android:layout_width="@dimen/y10"
+                    android:layout_height="@dimen/y10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/y12"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_worker_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/y200"
+        android:layout_height="@dimen/y200"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/sl_detail_menu">
+
+        <TextView
+            android:id="@+id/tv_dialog_scn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y7"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y11" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_scn_close"
+            android:layout_width="@dimen/y12"
+            android:layout_height="@dimen/y12"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/y10"
+            android:layout_marginTop="@dimen/y5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/close" />
+
+        <ListView
+            android:id="@+id/lv_dialog_scn"
+            android:layout_width="@dimen/y144"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_dialog_scn_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y7"
+            android:layout_marginTop="@dimen/y7"
+            android:divider="@null" />
+
+    </RelativeLayout>
+
+</LinearLayout>

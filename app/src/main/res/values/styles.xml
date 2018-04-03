@@ -1,0 +1,289 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--全屏加透明-->
+    <style name="TranslucentFullScreenTheme" parent="FullScreenTheme">
+        <item name="android:windowBackground">@color/translate</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!--全屏-->
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--透明，有任务栏电量时间等-->
+    <style name="NoTitleTranslucentTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/translate</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--menu动画-->
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/menushow</item>
+        <item name="android:windowExitAnimation">@anim/menuhide</item>
+    </style>
+
+    <!--主页底部按钮RelativeLayout样式-->
+    <style name="rl_main">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/sl_press</item>
+    </style>
+    <!--主页底部按钮LinearLayout样式-->
+    <style name="ll_main">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <!--主页底部按钮ImageView样式-->
+    <style name="iv_main">
+        <item name="android:layout_width">@dimen/y16</item>
+        <item name="android:layout_height">@dimen/y16</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <!--主页底部按钮TextView样式-->
+    <style name="tv_main">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/y8</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <!--首页三图样式-->
+    <style name="iv_first_page">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginLeft">@dimen/y5</item>
+        <item name="android:layout_marginRight">@dimen/y5</item>
+        <item name="android:layout_marginTop">@dimen/y5</item>
+    </style>
+    <!--工作管理充值ImageView样式-->
+    <style name="iv_job_mag_pay">
+        <item name="android:layout_width">@dimen/y24</item>
+        <item name="android:layout_height">@dimen/y24</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginTop">@dimen/x10</item>
+    </style>
+    <!--工作管理充值TextView样式-->
+    <style name="tv_job_mag_pay">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/y5</item>
+        <item name="android:textColor">@color/gray_a0a0a0</item>
+        <item name="android:textSize">@dimen/y10</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/y5</item>
+    </style>
+    <!--工作管理工人工作管理TextView样式-->
+    <style name="tv_job_mag_mag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/y20</item>
+        <item name="android:textColor">@color/blue_2681fc</item>
+        <item name="android:textSize">@dimen/y12</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--工作管理工人工作管理ImageView样式-->
+    <style name="iv_job_mag_mag">
+        <item name="android:layout_width">@dimen/y16</item>
+        <item name="android:layout_height">@dimen/y16</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/y20</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@mipmap/right</item>
+    </style>
+    <!--我的收藏ImageView样式-->
+    <style name="iv_me_collect">
+        <item name="android:layout_width">@dimen/y20</item>
+        <item name="android:layout_height">@dimen/y20</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginTop">@dimen/y5</item>
+    </style>
+    <!--我的收藏TextView样式-->
+    <style name="tv_me_collect">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/blue_2681fc</item>
+        <item name="android:textSize">@dimen/y8</item>
+        <item name="android:layout_marginTop">@dimen/y2</item>
+        <item name="android:layout_marginBottom">@dimen/y5</item>
+    </style>
+    <!--设置TextView样式-->
+    <style name="tv_set">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginBottom">@dimen/y5</item>
+        <item name="android:layout_marginLeft">@dimen/y10</item>
+        <item name="android:layout_marginTop">@dimen/y5</item>
+        <item name="android:textSize">@dimen/y8</item>
+        <item name="android:textColor">@color/gray_a0a0a0</item>
+    </style>
+    <!--设置ImageView样式
+    <ImageView-->
+    <style name="iv_set">
+        <item name="android:layout_width">@dimen/y5</item>
+        <item name="android:layout_height">@dimen/y5</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@mipmap/arrow_r</item>
+        <item name="android:layout_marginRight">@dimen/y5</item>
+    </style>
+    <!--顶部标题样式-->
+    <style name="tv_top_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/y14</item>
+        <item name="android:textColor">@color/blue_2681fc</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--分割线样式-->
+    <style name="v_split">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_c4ced3</item>
+    </style>
+    <!--我的客服LinearLayout外部样式-->
+    <style name="ll_mine_service_out">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/y5</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white_ffffff</item>
+    </style>
+    <!--我的客服LinearLayout内部样式-->
+    <style name="ll_mine_service_in">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/sl_press</item>
+    </style>
+    <!--我的客服图片样式-->
+    <style name="iv_mine_service">
+        <item name="android:layout_width">@dimen/y16</item>
+        <item name="android:layout_height">@dimen/y16</item>
+        <item name="android:layout_marginLeft">@dimen/y10</item>
+        <item name="android:layout_marginTop">@dimen/y5</item>
+        <item name="android:layout_marginBottom">@dimen/y5</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <!--我的客服文字样式-->
+    <style name="tv_mine_service">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray_a0a0a0</item>
+        <item name="android:layout_marginLeft">@dimen/y5</item>
+        <item name="android:textSize">@dimen/y10</item>
+    </style>
+    <!--顶部bar样式
+    <RelativeLayout-->
+    <style name="rl_top_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y30</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <!--返回RelativeLayout样式-->
+    <style name="rl_return">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/sl_press</item>
+    </style>
+    <!--返回图片样式-->
+    <style name="iv_return">
+        <item name="android:layout_width">@dimen/y18</item>
+        <item name="android:layout_height">@dimen/y18</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@mipmap/left</item>
+        <item name="android:layout_marginLeft">@dimen/y10</item>
+        <item name="android:layout_marginRight">@dimen/y10</item>
+    </style>
+    <!--自定义进度对话框样式-->
+    <style name="dialog_cprogress" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@drawable/sl_pg</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!--雇主工作管理-->
+    <style name="rl_manage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/sl_press</item>
+    </style>
+
+    <style name="tv_manage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">@dimen/y5</item>
+        <item name="android:layout_marginBottom">@dimen/y5</item>
+        <item name="android:textColor">@color/black_252323</item>
+        <item name="android:textSize">@dimen/y11</item>
+    </style>
+
+    <!--设置密码-->
+    <style name="ll_pwd">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/x40</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/sl_black_stroke</item>
+    </style>
+
+    <style name="rl_pwd">
+        <item name="android:layout_width">@dimen/x40</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="iv_pwd">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/p_black</item>
+    </style>
+
+    <style name="v_pwd">
+        <item name="android:layout_width">@dimen/x1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/black_252323</item>
+    </style>
+
+    <style name="tv_pwd">
+        <item name="android:textColor">@color/black_252323</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/x15</item>
+    </style>
+
+</resources>

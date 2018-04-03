@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_with_draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_c4ced3"
+    android:orientation="vertical"
+    tools:mContext=".activity.WithDrawActivity">
+
+    <RelativeLayout style="@style/rl_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_withdraw_return"
+            style="@style/rl_return">
+
+            <ImageView style="@style/iv_return" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_top_title"
+            android:text="转到银行卡" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/white_ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/y5"
+            android:text="姓名"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+        <EditText
+            android:id="@+id/et_with_draw_card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="收款人姓名"
+            android:padding="@dimen/y5"
+            android:singleLine="true"
+            android:textColor="@color/black_252323"
+            android:textColorHint="@color/gray_a0a0a0"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/y10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white_ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/y5"
+            android:text="卡号"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+        <EditText
+            android:id="@+id/et_with_draw_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="收款人储蓄卡号"
+            android:inputType="number"
+            android:padding="@dimen/y5"
+            android:textColor="@color/black_252323"
+            android:textColorHint="@color/gray_a0a0a0"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/y10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_with_draw_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/sl_press"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/y5"
+            android:text="银行"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+        <TextView
+            android:id="@+id/tv_with_draw_bank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="请选择银行"
+            android:textColor="@color/gray_a0a0a0"
+            android:textSize="@dimen/y10" />
+
+        <ImageView
+            android:layout_width="@dimen/y8"
+            android:layout_height="@dimen/y8"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/y5"
+            android:layout_marginRight="@dimen/y5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/arrow_r" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/white_ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/y5"
+            android:text="金额"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+        <EditText
+            android:id="@+id/et_with_draw_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="请输入金额"
+            android:inputType="number"
+            android:padding="@dimen/y5"
+            android:singleLine="true"
+            android:textColor="@color/black_252323"
+            android:textColorHint="@color/gray_a0a0a0"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/y10" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_with_draw_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginLeft="@dimen/y5"
+            android:layout_marginRight="@dimen/y5"
+            android:background="@drawable/sp_login_get"
+            android:gravity="center"
+            android:paddingBottom="@dimen/y5"
+            android:paddingTop="@dimen/y5"
+            android:text="下一步"
+            android:textColor="@color/white_ffffff"
+            android:textSize="@dimen/y10" />
+
+    </RelativeLayout>
+
+</LinearLayout>

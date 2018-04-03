@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/y5">
+
+        <RelativeLayout
+            android:id="@+id/rl_item_publish_job_kind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/tv_item_publish_job_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y5"
+            android:text="选择招聘工种"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/x15" />
+
+            <TextView
+                android:layout_toRightOf="@+id/tv_item_publish_job_kind"
+                android:id="@+id/tv_item_publish_job_kind_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y5"
+                android:text="(点击此处选择招聘工种)"
+                android:textColor="@color/gray_a0a0a0"
+                android:textSize="@dimen/x15" />
+        </RelativeLayout>
+
+        <View style="@style/v_split" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginTop="@dimen/y5"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_item_publish_job_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入招工人数"
+                android:inputType="number"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/x15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/x15" />
+
+            <EditText
+                android:id="@+id/et_item_publish_job_salary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y10"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入工人工资"
+                android:inputType="number"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/x15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元/人/天"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/x15" />
+
+        </LinearLayout>
+
+        <View style="@style/v_split" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginTop="@dimen/y5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工期"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/x15" />
+
+            <TextView
+                android:id="@+id/tv_item_publish_job_start_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="开始时间"
+                android:textSize="@dimen/x15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="——"
+                android:textSize="@dimen/x15" />
+
+            <TextView
+                android:id="@+id/tv_item_publish_job_end_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="结束时间"
+                android:textSize="@dimen/x15" />
+
+        </LinearLayout>
+
+        <View style="@style/v_split" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_publish_job_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_black_stroke_corner"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/y5"
+                android:text="删除该工种"
+                android:textColor="@color/black_252323"
+                android:textSize="@dimen/x15" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

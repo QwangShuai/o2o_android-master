@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y5"
+        android:text="请与工人先进行沟通再进行此项操作"
+        android:textColor="@color/gray_a0a0a0"
+        android:textSize="@dimen/y10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y20"
+        android:text="当日解雇工人需支付工人当日工资"
+        android:textColor="@color/red_ff3e50"
+        android:textSize="@dimen/y10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="建议今日工作完毕后再解雇工人"
+        android:textColor="@color/red_ff3e50"
+        android:textSize="@dimen/y10" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/y20"
+        android:layout_marginTop="@dimen/y20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_pop_fire_worker_no"
+            android:layout_width="@dimen/y60"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_me_login"
+            android:gravity="center"
+            android:padding="@dimen/y5"
+            android:text="再考虑考虑"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y8" />
+
+        <TextView
+            android:id="@+id/tv_pop_fire_worker_yes"
+            android:layout_width="@dimen/y60"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y50"
+            android:background="@drawable/sl_me_login"
+            android:gravity="center"
+            android:padding="@dimen/y5"
+            android:text="我要解雇工人"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y8" />
+
+    </LinearLayout>
+
+</LinearLayout>

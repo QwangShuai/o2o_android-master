@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_c4ced3"
+    android:orientation="vertical"
+    tools:mContext=".activity.SetPwdActivity">
+
+    <RelativeLayout style="@style/rl_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_set_pwd_return"
+            style="@style/rl_return">
+
+            <ImageView style="@style/iv_return" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_top_title"
+            android:text="密码设置" />
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/ll_mine_service_out">
+
+        <LinearLayout
+            android:id="@+id/ll_set_pwd_cash"
+            style="@style/ll_mine_service_in">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/y5"
+                android:layout_weight="1"
+                android:text="设置交易密码"
+                android:textSize="@dimen/x15" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/y5"
+                android:src="@mipmap/arrow_r" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

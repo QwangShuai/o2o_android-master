@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item_employer_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5"
+        android:background="@drawable/sl_item_skills"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.gjzg.custom.CImageView
+                android:id="@+id/iv_item_employer_manage_icon"
+                android:layout_width="@dimen/y35"
+                android:layout_height="@dimen/y35"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/y5"
+                android:scaleType="fitXY"
+                android:src="@mipmap/person_face_default" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y5"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_employer_manage_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black_252323"
+                    android:textSize="@dimen/y10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_item_employer_manage_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y2"
+                    android:textColor="@color/gray_a0a0a0"
+                    android:textSize="@dimen/y8" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/y2"
+                    android:id="@+id/tv_item_employer_manage_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="打橱柜"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_a0a0a0"
+                    android:textSize="@dimen/y8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/y5"
+                android:layout_marginTop="@dimen/y5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/white_ffffff"
+                    android:id="@+id/tv_item_employer_manage_details"
+                    android:layout_width="@dimen/y30"
+                    android:layout_height="@dimen/y15"
+                    android:text="查看详情"
+                    android:textSize="@dimen/y5"
+                    android:background="@drawable/sp_submit"
+                    android:layout_gravity="right"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_item_employer_manage_area"
+                    android:text="开源街3号"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y20" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/y5"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_item_employer_manage_status"
+                android:layout_width="@dimen/y30"
+                android:layout_height="@dimen/y15"
+                android:text="发布中"
+                android:textSize="@dimen/y8"
+                android:background="@drawable/sp_yellow"
+                android:textColor="@color/white_ffffff"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY" />
+            <LinearLayout
+                android:id="@+id/ll_item_employer_manage_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="@dimen/y5"
+                    android:background="@drawable/sp_green"
+                    android:id="@+id/tv_item_employer_manage_end"
+                    android:textColor="@color/white_ffffff"
+                    android:textSize="@dimen/y8"
+                    android:text="完成"
+                    android:layout_width="@dimen/y40"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/y5" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/y5"
+                    android:id="@+id/tv_item_employer_manage_wait_cancel"
+                    android:layout_width="@dimen/y44"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/y5"
+                    android:background="@drawable/sp_red"
+                    android:padding="@dimen/y5"
+                    android:textSize="@dimen/y8"
+                    android:textColor="@color/white_ffffff"
+                    android:text="取消发布" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_employer_manage_talk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_item_employer_manage_talk_cancel"
+                    android:layout_width="@dimen/y44"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/y5"
+                    android:background="@drawable/sp_red"
+                    android:textSize="@dimen/y8"
+                    android:padding="@dimen/y5"
+                    android:textColor="@color/white_ffffff"
+                    android:text="取消发布" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_employer_manage_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:textColor="@color/white_ffffff"
+                    android:gravity="center"
+                    android:id="@+id/tv_item_employer_manage_done_del"
+                    android:layout_width="@dimen/y44"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/y5"
+                    android:background="@drawable/sp_red"
+                    android:textSize="@dimen/y8"
+                    android:padding="@dimen/y5"
+                    android:text="删除信息" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/voucher_yellow" />
+
+        <TextView
+            android:id="@+id/tv_item_voucher_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y20"
+            android:layout_marginTop="@dimen/y10"
+            android:text="5元"
+            android:textColor="@color/white_ffffff"
+            android:textSize="@dimen/y20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_item_voucher_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_voucher_amount"
+            android:layout_marginLeft="@dimen/y20"
+            android:layout_marginTop="@dimen/y5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="领取后直接转入余额"
+            android:textColor="@color/white_ffffff"
+            android:textSize="@dimen/y10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginLeft="@dimen/y20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期:"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+            <TextView
+                android:id="@+id/tv_item_voucher_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017.09.26"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+            <TextView
+                android:id="@+id/tv_item_voucher_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017.09.30"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/y10" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_voucher_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/y5"
+            android:text="立即领取"
+            android:textColor="@color/black_252323"
+            android:textSize="@dimen/y10" />
+
+    </RelativeLayout>
+
+</LinearLayout>

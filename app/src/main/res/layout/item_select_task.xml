@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginLeft="@dimen/y5"
+        android:layout_marginRight="@dimen/y5"
+        android:background="@drawable/sl_me_login"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.gjzg.custom.CImageView
+                android:id="@+id/iv_item_select_task_icon"
+                android:layout_width="@dimen/y35"
+                android:layout_height="@dimen/y35"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/y12"
+                android:layout_marginLeft="@dimen/y7"
+                android:layout_marginRight="@dimen/y7"
+                android:layout_marginTop="@dimen/y12"
+                android:scaleType="fitXY"
+                android:src="@mipmap/person_face_default" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_select_task_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black_252323"
+                    android:textSize="@dimen/y10" />
+
+                <TextView
+                    android:id="@+id/tv_item_select_task_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y6"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_a0a0a0"
+                    android:textSize="@dimen/y9" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_item_select_task_state"
+                android:layout_width="@dimen/y30"
+                android:layout_height="@dimen/y15"
+                android:layout_marginRight="@dimen/y8"
+                android:layout_marginTop="@dimen/y5"
+                android:scaleType="fitXY"
+                android:src="@mipmap/worker_wait" />
+
+        </LinearLayout>
+
+        <View style="@style/v_split" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/y10"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="每次只能选择一个项目"
+                android:textColor="@color/gray_a0a0a0"
+                android:textSize="@dimen/y10" />
+
+            <TextView
+                android:id="@+id/tv_item_select_task_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/y3"
+                android:layout_marginRight="@dimen/y8"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@drawable/sl_me_login"
+                android:padding="@dimen/y3"
+                android:singleLine="true"
+                android:text="选择此项目邀约"
+                android:textColor="@color/gray_a0a0a0"
+                android:textSize="@dimen/y10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
